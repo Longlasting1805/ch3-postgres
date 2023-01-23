@@ -7,11 +7,8 @@ services:
       - .:/code2
     ports:
       - 8000:8000
-
     depends_on:
       - db
-    env_file:
-      - ./.venv.dev
   db:
     image: postgres:13
     volumes:

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-se4m013!gw)21cgt7i-v=$oiwxhj@rbco=$0!xq49=y!roxl4p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0']
 
 
 # Application definition
@@ -74,14 +74,14 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-"default": {
-"ENGINE": "django.db.backends.postgresql",
-"NAME": "postgres",
-"USER": "postgres",
-"PASSWORD": "postgres",
-"HOST": "db", # set in docker-compose.yml
-"PORT": 5432, # default postgres port
-}
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "db", # set in docker-compose.yml
+        "PORT": 5432, # default postgres port
+    }
 }
 
 
